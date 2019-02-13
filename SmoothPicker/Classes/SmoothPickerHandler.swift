@@ -62,10 +62,9 @@ public class SmoothPickerHandler :NSObject,UIScrollViewDelegate{
         if didUseSwipeToSkipCell {
             // Here we’ll add the code to snap the next cell
             // or to the previous cell
-      
             let snapToIndex = indexOfMajorCell()
             let snapToValue =  snapToIndex
-            let toValue = prefixes[snapToValue] 
+            let toValue = prefixes[snapToValue]
             // Damping equal 1 => no oscillations => decay animation:
             UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: velocity.x, options: .allowUserInteraction, animations: {
                 scrollView.contentOffset = CGPoint(x: toValue, y: 0)
@@ -75,8 +74,8 @@ public class SmoothPickerHandler :NSObject,UIScrollViewDelegate{
         }
         return didUseSwipeToSkipCell
     }
-
-     func indexOfMajorCell() -> Int {
+    
+    func indexOfMajorCell() -> Int {
         let currentOffset = (self.delegate?.scrollView.contentOffset.x)!
         let index = searchOffsets(offset: currentOffset)
         let safeIndex = max(0, min(itemsCount - 1 , index))

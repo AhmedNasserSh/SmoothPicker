@@ -19,11 +19,11 @@ public enum Direction {
     case  next
     case  pervious
 }
-
+@IBDesignable
  open class SmoothPickerView: UIView {
     @IBOutlet open  var dataSource: SmoothPickerViewDataSource?
     @IBOutlet open  var delegate :SmoothPickerViewDelegate?
-    @IBInspectable open var firstselectedCell = 0
+    @IBInspectable open var firstselectedItem = 0
     public var sliderCollectionView: UICollectionView?
     public var currentSelectedCell : UICollectionViewCell?
     public var sliderHandler :SmoothPickerHandler?
@@ -34,7 +34,6 @@ public enum Direction {
     internal var itemsWidth = [CGFloat]()
     internal var didEndDragging = true
     internal var itemsCount = 10
-    
     internal var scrollView: UIScrollView {
         return sliderCollectionView!
     }
@@ -75,8 +74,8 @@ public enum Direction {
         self.sliderCollectionView?.register(SmoothPickerCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
         self.sliderCollectionView?.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         loadedFirstTime = true
-        sliderHandler = SmoothPickerHandler(self)
         self.display()
+
     }
     private func saveFrames() {
         itemsCount = (dataSource?.numberOfItems())!
@@ -87,6 +86,7 @@ public enum Direction {
     }
     private func display(){
         self.saveFrames()
+        sliderHandler = SmoothPickerHandler(self)
         if SmoothPickerConfiguration.selectionStyle == nil {
             SmoothPickerConfiguration.setSelectionStyle(selectionStyle: .scale)
         }
@@ -123,7 +123,7 @@ extension SmoothPickerView :UICollectionViewDelegate, UICollectionViewDataSource
         return cell
     }
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row  == firstselectedCell && !scrolledFirstTime{
+        if indexPath.row  == firstselectedItem && !scrolledFirstTime{
             scrolledFirstTime = true
             (cell as? SmoothPickerCollectionViewCell)?.setSelected(selected: true)
             setSelected(selectedCell: cell,index: indexPath.row)
