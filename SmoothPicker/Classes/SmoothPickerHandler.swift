@@ -1,8 +1,8 @@
 //
-//  SliderHandler.swift
-//  EasySpinnerView
+//  SmoothPickerHandler.swift
+//  SmoothPicker
 //
-//  Created by Ahmed Nasser on 2/5/19.
+//  Created by Ahmed Nasser on 2/11/19.
 //  Copyright © 2019 Ahmed Nasser. All rights reserved.
 //
 

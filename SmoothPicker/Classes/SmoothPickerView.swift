@@ -1,9 +1,9 @@
 //
-//  SmoothPickerViewView.swift
-//  Ana Vodafone
+//  SmoothPickerView.swift
+//  SmoothPicker
 //
-//  Created by Ahmed Nasser on 1/16/19.
-//  Copyright © 2019 Vodafone Egypt. All rights reserved.
+//  Created by Ahmed Nasser on 2/11/19.
+//  Copyright © 2019 Ahmed Nasser. All rights reserved.
 //
 
 import UIKit
