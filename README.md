@@ -5,13 +5,14 @@
 
 A Customized Component for creating a horizontal picker with custom styles 
 
-<br />
+
 ![Alt Text](https://media.giphy.com/media/45bEffMoHH5UzskrgJ/giphy.gif)
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -22,16 +23,9 @@ it, simply add the following line to your Podfile:
 pod 'SmoothPicker'
 ```
 
-## Author
+# Usage
 
-ahmed.nasser2310@gmail.com, ahmed.nasser2310@gmail.com
-
-## License
-
-SmoothPicker is available under the MIT license. See the LICENSE file for more info.
-# SmoothPicker
-
-Createe the view either by storyboard or by frame 
+Create the view either by storyboard or by frame 
 <br />
 
 ```
@@ -99,3 +93,7 @@ static func setColors(selectedColor:UIColor,dimmedColor:UIColor) // for colred s
 ## Authors
 
 * **Ahmed Nasser** - [AvaVaas](https://github.com/AvaVaas)
+
+## License
+
+SmoothPicker is available under the MIT license. See the LICENSE file for more info.
