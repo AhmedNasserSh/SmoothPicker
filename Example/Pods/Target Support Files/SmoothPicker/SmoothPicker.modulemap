@@ -1,0 +1,6 @@
+framework module SmoothPicker {
+  umbrella header "SmoothPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,18 +7,38 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-
+import SmoothPicker
+class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerViewDataSource {
+    @IBOutlet weak var pickerView: SmoothPickerView!
+    
+    var i = 0
+    var views = [UIView]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        for _ in 1..<11 {
+            i += 5
+            let view = UIView(frame: CGRect(x: 0, y: 0, width: i, height: 50))
+            view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            views.append(view)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func didSelectIndex(index: Int) {
+        print("SelectedIndex \(index)")
     }
-
+    
+    func numberOfItems() -> Int {
+        return 10
+    }
+    
+    func itemForIndex(index: Int) -> UIView {
+        return views[index]
+    }
+    @IBAction func navigateNext(_ sender: Any) {
+        pickerView.navigate(direction: .next)
+    }
+    @IBAction func navigatePervious(_ sender: Any) {
+        pickerView.navigate(direction: .pervious)
+    }
+    
 }
 
