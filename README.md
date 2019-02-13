@@ -98,6 +98,7 @@ public enum SelectionStyle {
 SmoothPickerConfiguration.setSelectionStyle(selectionStyle: .scale) // scale is deafult default 
 static func setColors(selectedColor:UIColor,dimmedColor:UIColor) // for colred selection style black and gray is default
 ```
+
 ## Authors
 
 * **Ahmed Nasser** - [AvaVaas](https://github.com/AvaVaas)
@@ -105,3 +106,6 @@ static func setColors(selectedColor:UIColor,dimmedColor:UIColor) // for colred s
 ## License
 
 SmoothPicker is available under the MIT license. See the LICENSE file for more info.
+
+thanks for this tutorial it was a great help 
+https://medium.com/@shaibalassiano/tutorial-horizontal-uicollectionview-with-paging-9421b479ee94
