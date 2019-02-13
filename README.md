@@ -41,6 +41,9 @@ class ViewController{
             view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             views.append(view)
         }
+        
+        pickerView.firstselectedItem = 2 // you can also set the first selected item at launch 
+
     }
     func didSelectIndex(index: Int) {
         print("SelectedIndex \(index)")
@@ -79,10 +82,15 @@ public enum Direction {
 }
 public func navigate(direction :Direction)
 ```
+## Selection
+```
+open var firstselectedItem = 0 // to set the first selected item at intilization 0 is the default 
+```
 
 
 ## Customization
 ```
+// you can choose between the selection styles available 
 public enum SelectionStyle {
     case scale
     case colored
