@@ -66,12 +66,12 @@ class ViewController{
 
 ## Data Source
 ```
-func numberOfItems() -> Int
+func numberOfItems() -> Int //number of items to display
 func itemForIndex(index:Int) -> UIView // retrun the view per item just make sure it can calculate it's frame correctly 
 ```
 ## Delegate
 ```
-func didSelectIndex(index:Int)
+func didSelectIndex(index:Int) // the selected item index 
 ```
 ## Navigation
 ```
