@@ -6,7 +6,7 @@
 A Customized Component for creating a horizontal picker with custom styles 
 
 <br />
-![Alt Text](https://media.giphy.com/media/eIILb9fQSgFethNyf2/giphy.gif)
+![Alt Text](https://media.giphy.com/media/aM98ApTjIK5iprKXII/giphy.gif)
 
 ## Example
 
