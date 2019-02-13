@@ -6,8 +6,7 @@
 A Customized Component for creating a horizontal picker with custom styles 
 
 <br />
-![Alt Text](https://media.giphy.com/media/aM98ApTjIK5iprKXII/giphy.gif)
-
+![Alt Text](https://media.giphy.com/media/45bEffMoHH5UzskrgJ/giphy.gif)
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -77,6 +76,17 @@ func itemForIndex(index:Int) -> UIView // retrun the view per item just make sur
 ```
 func didSelectIndex(index:Int)
 ```
+## navigation
+```
+//the default navigation is swipe you can also set navigation to some button 
+public enum Direction {
+    case  next
+    case  pervious
+}
+public func navigate(direction :Direction)
+```
+
+
 ## Customization
 ```
 public enum SelectionStyle {
