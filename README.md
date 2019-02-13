@@ -38,7 +38,7 @@ class ViewController{
         super.viewDidLoad()
         for _ in 1..<11 {
             let view = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-            view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            view.backgroundColor = UIColor.gray
             views.append(view)
         }
         
@@ -75,7 +75,7 @@ func didSelectIndex(index:Int)
 ```
 ## navigation
 ```
-//the default navigation is swipe you can also set navigation to some button 
+//The default navigation is swipe you can in addtion set navigation to some button 
 public enum Direction {
     case  next
     case  pervious
