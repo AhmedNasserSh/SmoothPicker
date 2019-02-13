@@ -34,6 +34,7 @@ public enum Direction {
     internal var itemsWidth = [CGFloat]()
     internal var didEndDragging = true
     internal var itemsCount = 10
+    
     internal var scrollView: UIScrollView {
         return sliderCollectionView!
     }
