@@ -73,7 +73,7 @@ func itemForIndex(index:Int) -> UIView // retrun the view per item just make sur
 ```
 func didSelectIndex(index:Int)
 ```
-## navigation
+## Navigation
 ```
 //The default navigation is swipe you can in addtion set navigation to some button 
 public enum Direction {
