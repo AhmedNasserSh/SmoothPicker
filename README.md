@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/SmoothPicker.svg?style=flat)](https://cocoapods.org/pods/SmoothPicker)
 [![Platform](https://img.shields.io/cocoapods/p/SmoothPicker.svg?style=flat)](https://cocoapods.org/pods/SmoothPicker)
 
-A Customized Component for creating a horizontal picker with custom styles 
+A Customized Component for creating a horizontal iOS picker with custom styles 
 
 
 ![Alt Text](https://media.giphy.com/media/45bEffMoHH5UzskrgJ/giphy.gif) 
