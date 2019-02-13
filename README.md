@@ -93,6 +93,7 @@ open var firstselectedItem = 0 // to set the first selected item at intilization
 ## Customization
 ```
 // you can choose between the selection styles available 
+// a new styles and layouts are upcoming 
 public enum SelectionStyle {
     case scale
     case colored
