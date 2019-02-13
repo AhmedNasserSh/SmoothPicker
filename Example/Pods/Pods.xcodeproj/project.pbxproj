@@ -18,7 +18,6 @@
 		1C813FA859BDE4ED21E4EC4D0279DC0A /* SmoothPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33088F864766FE5A6100723C17B55D1C /* SmoothPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DCE46EDB8C10F92E3ADA0880FE04E31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70F272E8B7D9D652250E9355A427B75 /* UIKit.framework */; };
 		2153A0869353E4E5F638A3CD2834E0CE /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */; };
-		226990D03C1E6C01BA5A9B3C193DD7E6 /* SmoothPickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86F1AFBE0B6F04B06C3EC7043762E5 /* SmoothPickerConfiguration.swift */; };
 		274276CBBA8135F4FF36A703BC958F4A /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */; };
 		319D1E7B71829E44330369123BAAADEF /* SmoothPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFB9606AB940C6B010397AF64C84580 /* SmoothPicker-dummy.m */; };
 		34CB9D05A0120B6307DEE96223B5DC80 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4EE941C99C2F663494C43944D63FD /* ConstraintConfig.swift */; };
@@ -33,7 +32,6 @@
 		5C9F5EFDB97771EC42DFC7794EB8CFCF /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */; };
 		6C55B3E133812371AD270EE17812C36B /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155B0F68F55650AB9DA3EB802B75CFE0 /* ConstraintConstantTarget.swift */; };
 		7239D7D34E0B21F2965012A1D3CAA0FE /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */; };
-		7939C6F3A5E1CB05654C76E86C488B10 /* SmoothPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665034A84569476DB7F5A8DDC1A93CA /* SmoothPickerHandler.swift */; };
 		866D1EE25A705D0A8EE93EB3117448F4 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B953D578152B8ABC94EDF5E0C6A43 /* LayoutConstraintItem.swift */; };
 		8DEC7EC3E3EC4DF53D7E9167E0D5D892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018076189E9665ECA3FF8D321025D98A /* Foundation.framework */; };
 		8E06027B645B6A4BC5AC0159B3CB8B8D /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */; };
@@ -44,6 +42,10 @@
 		B7B61526EBFBE658ABCE83B5C8AF230E /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */; };
 		B9C11537196F667A6C7515A498B18163 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */; };
 		BB66256FD4BCCF5F15B82BEA6CCF1F87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018076189E9665ECA3FF8D321025D98A /* Foundation.framework */; };
+		BE49C33F2214573B001C7957 /* SmoothPickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49C33B2214573B001C7957 /* SmoothPickerConfiguration.swift */; };
+		BE49C3402214573B001C7957 /* SmoothPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49C33C2214573B001C7957 /* SmoothPickerCollectionViewCell.swift */; };
+		BE49C3412214573B001C7957 /* SmoothPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49C33D2214573B001C7957 /* SmoothPickerHandler.swift */; };
+		BE49C3422214573B001C7957 /* SmoothPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49C33E2214573B001C7957 /* SmoothPickerView.swift */; };
 		C6B5036376664614CA9C72ADC9E7D423 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */; };
 		CF96B16949342CC91DB5DC06250F6073 /* Pods-SmoothPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87546ACEE0ACEE6BC87046274175FEB0 /* Pods-SmoothPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D106BD54B991D2439418EB812CEA68CD /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */; };
@@ -52,12 +54,10 @@
 		EA47FE574E4E4266E8551B35A7A34BDF /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645061FD8BF394AC613CF4F0D51EEE0B /* ConstraintDSL.swift */; };
 		EB38E96E9EA24C5735D7BD77CBE09608 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */; };
 		EC9FF04F6EA3E991B0ACB411C01DBA4D /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */; };
-		F0DFD6561F59EB08AB9928E6517EA895 /* SmoothPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8020490A13F78955E240AB90AFB39B4 /* SmoothPickerView.swift */; };
 		F2E51EA29D9DDD386B2AD6E11F56A929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018076189E9665ECA3FF8D321025D98A /* Foundation.framework */; };
 		F6EA480BD62A98DA55189AA798467C87 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */; };
 		F7942EBB1627CE8FE4236C5DDFC68196 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17F2D7F42352672F30A144E51AC809 /* ConstraintRelation.swift */; };
 		FA0648E1B94DEC14E524770F6F21E24F /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */; };
-		FA540D5FE9F3956A18031ECCAB5E2D4F /* SmoothPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EC655B58ED7106334FA2DF8032122 /* SmoothPickerCollectionViewCell.swift */; };
 		FA87D46A72962DF4E9701AB33B62C6F5 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,10 +94,10 @@
 
 /* Begin PBXFileReference section */
 		018076189E9665ECA3FF8D321025D98A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		04B26117C973952C162EC896D1E1D3EB /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B26117C973952C162EC896D1E1D3EB /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		0AF518E3C1EEA98354E7A1BB1CEC881B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		0F776C45E8D3523B8F62A1915FB2C0EE /* Pods_SmoothPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmoothPicker_Example.framework; path = "Pods-SmoothPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F776C45E8D3523B8F62A1915FB2C0EE /* Pods_SmoothPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A19E8C93FEB798E18696513B6A7521 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11084A6BA20780B0A92EE054D45AD2B7 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		1130FD3420568BD4A44BC6359400E0A8 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		2603DBB8657EF42482EE70F44009C5F7 /* Pods-SmoothPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmoothPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		27465BC16A7227772DC0CD2594202654 /* Pods-SmoothPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmoothPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		2CB08747AFBC5ED16D13ECDCA8EE50E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2CB08747AFBC5ED16D13ECDCA8EE50E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2F8C2D6F120D180C3437DCB19ACD9316 /* Pods-SmoothPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmoothPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		31C2594604C50271970E2EF6FA4D940F /* SmoothPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmoothPicker-prefix.pch"; sourceTree = "<group>"; };
 		33088F864766FE5A6100723C17B55D1C /* SmoothPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmoothPicker-umbrella.h"; sourceTree = "<group>"; };
@@ -120,12 +120,11 @@
 		3BB3A02861DF3F4CB90620DA43A87F0F /* Pods-SmoothPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmoothPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		465909C1E34108C63AB5FBA6378D3493 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		481EC655B58ED7106334FA2DF8032122 /* SmoothPickerCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmoothPickerCollectionViewCell.swift; path = SmoothPicker/Classes/SmoothPickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		48CE3DCD5A18E652A9D4C4FCC6AEAE10 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		4AFAD86A0C964B05A6190024716AEFBD /* Pods-SmoothPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmoothPicker_Example.modulemap"; sourceTree = "<group>"; };
 		5495F3260249C5CD5E62E6D02610A41D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		55F1F08ED6F3C072E7AC9154FBDC8C4E /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		562C37CF0D625E1DB17F75EEBFDE7C77 /* SmoothPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SmoothPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		562C37CF0D625E1DB17F75EEBFDE7C77 /* SmoothPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SmoothPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5B83519C72631291790509DDA47A7F85 /* Pods-SmoothPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmoothPicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
@@ -133,18 +132,16 @@
 		65A86EE6F4BA6AE81A258A4A142EF633 /* Pods-SmoothPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmoothPicker_Example-resources.sh"; sourceTree = "<group>"; };
 		6FEC828032EA1B6D4BB2E173968415BB /* Pods-SmoothPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmoothPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		75E9C4C8208BD32985AC20A2807974B7 /* Pods-SmoothPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmoothPicker_Example-dummy.m"; sourceTree = "<group>"; };
-		7B6360A3D6D6A9CEBC9A2AC3CDA8E190 /* SmoothPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmoothPicker.framework; path = SmoothPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6360A3D6D6A9CEBC9A2AC3CDA8E190 /* SmoothPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmoothPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87546ACEE0ACEE6BC87046274175FEB0 /* Pods-SmoothPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmoothPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8A0A4D5D85B4FAEB4C7AF868A3E48121 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		8C63BBF249051214F82C6CC8DFF579C5 /* Pods-SmoothPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmoothPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		92EC67A9344FB011AC6B0CB0B1706C1C /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C3909A918EED03F0BC2FB5474A4CE90 /* Pods-SmoothPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmoothPicker_Tests-resources.sh"; sourceTree = "<group>"; };
-		A665034A84569476DB7F5A8DDC1A93CA /* SmoothPickerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmoothPickerHandler.swift; path = SmoothPicker/Classes/SmoothPickerHandler.swift; sourceTree = "<group>"; };
 		A66D626F10704353B7D48E7B51D7972D /* SmoothPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmoothPicker.xcconfig; sourceTree = "<group>"; };
 		A8E5AC6BC59FEBC35386306BE4185D1F /* Pods-SmoothPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmoothPicker_Tests.modulemap"; sourceTree = "<group>"; };
-		AE86F1AFBE0B6F04B06C3EC7043762E5 /* SmoothPickerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmoothPickerConfiguration.swift; path = SmoothPicker/Classes/SmoothPickerConfiguration.swift; sourceTree = "<group>"; };
 		AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		B31F8F27DD4287A59EEC5D1F7D4EFE65 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +149,11 @@
 		B5C9CEB30AA71EB58B5CD53321954DE0 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		B73C67F9EFC99A11440EE4069211B84A /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		BE49C33A2214573B001C7957 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		BE49C33B2214573B001C7957 /* SmoothPickerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothPickerConfiguration.swift; sourceTree = "<group>"; };
+		BE49C33C2214573B001C7957 /* SmoothPickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothPickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE49C33D2214573B001C7957 /* SmoothPickerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothPickerHandler.swift; sourceTree = "<group>"; };
+		BE49C33E2214573B001C7957 /* SmoothPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothPickerView.swift; sourceTree = "<group>"; };
 		C70F272E8B7D9D652250E9355A427B75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
@@ -164,16 +166,15 @@
 		DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		DD2814AA22F091E610A0FD7ADAA70848 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		ED273945DE3C5EDEF145C612CCDFB15C /* Pods_SmoothPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmoothPicker_Tests.framework; path = "Pods-SmoothPicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED273945DE3C5EDEF145C612CCDFB15C /* Pods_SmoothPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		EEC1C0925B7A75C47F90DA4CD473E0A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F75E7EE36678F81FD1EC4247DB1B87 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
-		F8020490A13F78955E240AB90AFB39B4 /* SmoothPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmoothPickerView.swift; path = SmoothPicker/Classes/SmoothPickerView.swift; sourceTree = "<group>"; };
 		F9F105A1C9F85AB892F84E248DA147A1 /* Pods-SmoothPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmoothPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FC074848351F006B9FD7C3EC30A371FA /* Pods-SmoothPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmoothPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FCFB9606AB940C6B010397AF64C84580 /* SmoothPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmoothPicker-dummy.m"; sourceTree = "<group>"; };
 		FE1FE61DC3251BBA5CD452BE8564C8E7 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		FE6B7DEDC5E915EBEED3755A579AA33A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FE6B7DEDC5E915EBEED3755A579AA33A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,10 +331,7 @@
 		9C80BC7B08600ADA1B5871E1E0F5F804 /* SmoothPicker */ = {
 			isa = PBXGroup;
 			children = (
-				481EC655B58ED7106334FA2DF8032122 /* SmoothPickerCollectionViewCell.swift */,
-				AE86F1AFBE0B6F04B06C3EC7043762E5 /* SmoothPickerConfiguration.swift */,
-				A665034A84569476DB7F5A8DDC1A93CA /* SmoothPickerHandler.swift */,
-				F8020490A13F78955E240AB90AFB39B4 /* SmoothPickerView.swift */,
+				BE49C3392214573A001C7957 /* Classes */,
 				B4A13F5EA1A7892C61767930C96DBF8A /* Pod */,
 				87800F5FF79921432314C2B9C42EE04D /* Support Files */,
 			);
@@ -380,7 +378,6 @@
 				45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */,
 				432313F4618A6E0D54282078B6A48A1B /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -392,6 +389,19 @@
 				562C37CF0D625E1DB17F75EEBFDE7C77 /* SmoothPicker.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		BE49C3392214573A001C7957 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE49C33A2214573B001C7957 /* .gitkeep */,
+				BE49C33B2214573B001C7957 /* SmoothPickerConfiguration.swift */,
+				BE49C33C2214573B001C7957 /* SmoothPickerCollectionViewCell.swift */,
+				BE49C33D2214573B001C7957 /* SmoothPickerHandler.swift */,
+				BE49C33E2214573B001C7957 /* SmoothPickerView.swift */,
+			);
+			name = Classes;
+			path = SmoothPicker/Classes;
 			sourceTree = "<group>";
 		};
 		C74D9CDE33E84D0030400AE68498B995 /* Development Pods */ = {
@@ -605,7 +615,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE49C33F2214573B001C7957 /* SmoothPickerConfiguration.swift in Sources */,
+				BE49C3402214573B001C7957 /* SmoothPickerCollectionViewCell.swift in Sources */,
+				BE49C3412214573B001C7957 /* SmoothPickerHandler.swift in Sources */,
 				4A42622F35121D0AD0A3273F4FE1EB3D /* Pods-SmoothPicker_Example-dummy.m in Sources */,
+				BE49C3422214573B001C7957 /* SmoothPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,10 +628,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				319D1E7B71829E44330369123BAAADEF /* SmoothPicker-dummy.m in Sources */,
-				FA540D5FE9F3956A18031ECCAB5E2D4F /* SmoothPickerCollectionViewCell.swift in Sources */,
-				226990D03C1E6C01BA5A9B3C193DD7E6 /* SmoothPickerConfiguration.swift in Sources */,
-				7939C6F3A5E1CB05654C76E86C488B10 /* SmoothPickerHandler.swift in Sources */,
-				F0DFD6561F59EB08AB9928E6517EA895 /* SmoothPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
