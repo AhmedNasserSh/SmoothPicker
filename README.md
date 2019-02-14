@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/SmoothPicker.svg?style=flat)](https://cocoapods.org/pods/SmoothPicker)
 [![Platform](https://img.shields.io/cocoapods/p/SmoothPicker.svg?style=flat)](https://cocoapods.org/pods/SmoothPicker)
 
-A Customized Component for creating a horizontal picker with custom styles 
+A Customized Component for creating a horizontal iOS picker with custom views 
 
 
 ![Alt Text](https://media.giphy.com/media/45bEffMoHH5UzskrgJ/giphy.gif) 
@@ -93,6 +93,7 @@ open var firstselectedItem = 0 // to set the first selected item at intilization
 ## Customization
 ```
 // you can choose between the selection styles available 
+// a new styles and layouts are upcoming 
 public enum SelectionStyle {
     case scale
     case colored
