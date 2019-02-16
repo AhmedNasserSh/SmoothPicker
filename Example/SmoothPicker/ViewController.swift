@@ -15,7 +15,6 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
     var views = [UIView]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        SmoothPickerConfiguration.setSelectionStyle(selectionStyle: .colored)
         for _ in 1..<11 {
             i += 5
             let view = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
@@ -25,7 +24,7 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
     }
     func didSelectIndex(index: Int, view: UIView) {
         print("SelectedIndex \(index)")
-        view.backgroundColor = UIColor.green
+        view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
     }
     func numberOfItems() -> Int {
         return 10
@@ -40,6 +39,5 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
     @IBAction func navigatePervious(_ sender: Any) {
         pickerView.navigate(direction: .pervious)
     }
-    
 }
 

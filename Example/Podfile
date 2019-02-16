@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'SmoothPicker_Example' do
-  pod 'SmoothPicker', :path => '../'
+    pod 'SmoothPicker', :path => '../'
 
   target 'SmoothPicker_Tests' do
     inherit! :search_paths

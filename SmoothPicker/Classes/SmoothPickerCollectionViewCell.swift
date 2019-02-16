@@ -31,6 +31,7 @@ class SmoothPickerCollectionViewCell: UICollectionViewCell {
         }else{
             scaledSelected()
         }
+        view?.setSmoothSelected(selected)
     }
     private func coloredSelected() {
         let color = scrollSelected ? SmoothPickerConfiguration.selectedColor:SmoothPickerConfiguration.dimmedColor
@@ -43,4 +44,7 @@ class SmoothPickerCollectionViewCell: UICollectionViewCell {
         }
     }
 }
-
+extension UIView {
+    func setSmoothSelected(_ selected : Bool) {
+    }
+}
