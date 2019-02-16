@@ -100,6 +100,7 @@ public enum SelectionStyle {
 }
 SmoothPickerConfiguration.setSelectionStyle(selectionStyle: .scale) // scale is deafult default 
 static func setColors(selectedColor:UIColor,dimmedColor:UIColor) // for colred selection style black and gray is default
+@objc open func setSmoothSelected(_ selected : Bool) // you can ovveride it in your view it gives you the. current state of your view 
 ```
 
 ## Authors
