@@ -91,6 +91,7 @@ open var firstselectedItem = 0 // to set the first selected item at intilization
 
 
 ## Customization
+![Alt Text](https://media.giphy.com/media/4HcSMGzEB59kdyNcIU/giphy.gif)
 ```
 // you can choose between the selection styles available 
 // a new styles and layouts are upcoming 
