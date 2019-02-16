@@ -73,7 +73,7 @@ func itemForIndex(index:Int) -> UIView // retrun the view per item just make sur
 ```
 ## Delegate
 ```
- func didSelectIndex(index:Int,view:UIView) // the selected item index 
+ func didSelectIndex(index:Int,view:UIView) // the selected item  
 ```
 ## Navigation
 ```
