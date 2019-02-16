@@ -9,11 +9,11 @@
 import UIKit
 import SnapKit
 @objc public protocol SmoothPickerViewDelegate {
-    func didSelectIndex(index:Int,view:UIView)
+    func didSelectItem(index:Int,view:UIView,pickerView:SmoothPickerView)
 }
 @objc public protocol SmoothPickerViewDataSource {
-    func numberOfItems() -> Int
-    func itemForIndex(index:Int) -> UIView
+    func numberOfItems(pickerView:SmoothPickerView) -> Int
+    func itemForIndex(index:Int,pickerView:SmoothPickerView) -> UIView
 }
 public enum Direction {
     case  next
@@ -53,9 +53,9 @@ public enum Direction {
         }
     }
     private func commInit () {
-        let firstItemWidth = (dataSource?.itemForIndex(index: 0).frame.size.width)!
+        let firstItemWidth = (dataSource?.itemForIndex(index: 0, pickerView: self).frame.size.width)!
         let contentInsetsLeft  = self.bounds.width / 2 - firstItemWidth / 2
-        let lastItemWidth = (dataSource?.itemForIndex(index: (dataSource?.numberOfItems())! - 1).frame.size.width)!
+        let lastItemWidth = (dataSource?.itemForIndex(index: (dataSource?.numberOfItems(pickerView: self))! - 1, pickerView: self).frame.size.width)!
         let contentInsetsRight =  self.bounds.width / 2 - (lastItemWidth) / 2
         let layout: UICollectionViewFlowLayout = {
             let layout = UICollectionViewFlowLayout()
@@ -79,9 +79,9 @@ public enum Direction {
 
     }
     private func saveFrames() {
-        itemsCount = (dataSource?.numberOfItems())!
+        itemsCount = (dataSource?.numberOfItems(pickerView: self))!
         for i in 0..<itemsCount {
-            let width  = (dataSource?.itemForIndex(index: i))!.frame.width
+            let width  = (dataSource?.itemForIndex(index: i, pickerView: self))!.frame.width
             itemsWidth.append(width)
         }
     }
@@ -91,7 +91,7 @@ public enum Direction {
         if SmoothPickerConfiguration.selectionStyle == nil {
             SmoothPickerConfiguration.setSelectionStyle(selectionStyle: .scale)
         }
-        itemsCount = dataSource?.numberOfItems() ?? 1
+        itemsCount = dataSource?.numberOfItems(pickerView: self) ?? 1
         sliderCollectionView?.delegate = self
         sliderCollectionView?.dataSource = self
         self.scrolledFirstTime = false
@@ -115,11 +115,11 @@ extension SmoothPickerView :UICollectionViewDelegate, UICollectionViewDataSource
         return 1
     }
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource?.numberOfItems() ?? 1
+        return dataSource?.numberOfItems(pickerView: self) ?? 1
     }
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SmoothPickerCollectionViewCell", for: indexPath) as!  SmoothPickerCollectionViewCell
-        let item = (dataSource?.itemForIndex(index: indexPath.row))!
+        let item = (dataSource?.itemForIndex(index: indexPath.row, pickerView: self))!
         cell.delegate = delegate
         cell.setContentView(item)
         return cell
@@ -134,7 +134,7 @@ extension SmoothPickerView :UICollectionViewDelegate, UICollectionViewDataSource
         }
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: itemsWidth[indexPath.row], height: (dataSource?.itemForIndex(index: indexPath.row).frame.height)!)
+        let size = CGSize(width: itemsWidth[indexPath.row], height: (dataSource?.itemForIndex(index: indexPath.row, pickerView: self).frame.height)!)
         return size
     }
 }
@@ -164,7 +164,7 @@ extension SmoothPickerView :SmoothPickerScrollDelegate {
         currentSelectedIndex = index
         (selectedCell as? SmoothPickerCollectionViewCell)?.setSelected(selected: true)
         if didEndDragging {
-            self.delegate?.didSelectIndex(index: index, view:((selectedCell as? SmoothPickerCollectionViewCell)?.view)!)
+            self.delegate?.didSelectItem(index: index, view:((selectedCell as? SmoothPickerCollectionViewCell)?.view)!, pickerView: self)
         }
     }
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {

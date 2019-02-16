@@ -9,6 +9,8 @@
 import UIKit
 import SmoothPicker
 class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerViewDataSource {
+
+
     @IBOutlet weak var pickerView: SmoothPickerView!
     
     var i = 0
@@ -23,17 +25,18 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
         }
         pickerView.firstselectedItem  = 4
     }
-    func didSelectIndex(index: Int, view: UIView) {
-        print("SelectedIndex \(index)")
-        view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-    }
-    func numberOfItems() -> Int {
+    func numberOfItems(pickerView: SmoothPickerView) -> Int {
         return 10
     }
     
-    func itemForIndex(index: Int) -> UIView {
+    func itemForIndex(index: Int, pickerView: SmoothPickerView) -> UIView {
         return views[index]
     }
+
+    func didSelectItem(index: Int, view: UIView, pickerView: SmoothPickerView) {
+        print("SelectedIndex \(index)")
+    }
+    
     @IBAction func navigateNext(_ sender: Any) {
         pickerView.navigate(direction: .next)
     }

@@ -38,7 +38,7 @@ class SmoothPickerCollectionViewCell: UICollectionViewCell {
         self.view?.backgroundColor = color
     }
     private func scaledSelected(){
-        let scale :CGFloat = scrollSelected ? 1.5 : 1
+        let scale :CGFloat = scrollSelected ? 1.3 : 1
         UIView.animate(withDuration: 0.1) {
             self.transform = CGAffineTransform(scaleX: scale, y: scale)
         }
