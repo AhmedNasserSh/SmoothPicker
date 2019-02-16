@@ -12,6 +12,7 @@ import SnapKit
 class SmoothPickerCollectionViewCell: UICollectionViewCell {
     var view:UIView?
     internal var scrollSelected = false
+    var delegate :SmoothPickerViewDelegate?
     func setContentView(_ view:UIView) {
         if SmoothPickerConfiguration.selectionStyle == .colored  {
              view.backgroundColor = SmoothPickerConfiguration.dimmedColor

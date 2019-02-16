@@ -23,10 +23,10 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
             views.append(view)
         }
     }
-    func didSelectIndex(index: Int) {
+    func didSelectIndex(index: Int, view: UIView) {
         print("SelectedIndex \(index)")
+        view.backgroundColor = UIColor.green
     }
-    
     func numberOfItems() -> Int {
         return 10
     }

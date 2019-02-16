@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 @objc public protocol SmoothPickerViewDelegate {
-    func didSelectIndex(index:Int)
+    func didSelectIndex(index:Int,view:UIView)
 }
 @objc public protocol SmoothPickerViewDataSource {
     func numberOfItems() -> Int
@@ -120,6 +120,7 @@ extension SmoothPickerView :UICollectionViewDelegate, UICollectionViewDataSource
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SmoothPickerCollectionViewCell", for: indexPath) as!  SmoothPickerCollectionViewCell
         let item = (dataSource?.itemForIndex(index: indexPath.row))!
+        cell.delegate = delegate
         cell.setContentView(item)
         return cell
     }
@@ -164,7 +165,7 @@ extension SmoothPickerView :SmoothPickerScrollDelegate {
         currentSelectedIndex = index
         (selectedCell as? SmoothPickerCollectionViewCell)?.setSelected(selected: true)
         if didEndDragging {
-            self.delegate?.didSelectIndex(index: index)
+            self.delegate?.didSelectIndex(index: index, view:((selectedCell as? SmoothPickerCollectionViewCell)?.view)!)
         }
     }
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
