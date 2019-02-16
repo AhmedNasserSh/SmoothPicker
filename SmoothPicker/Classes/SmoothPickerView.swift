@@ -127,7 +127,6 @@ extension SmoothPickerView :UICollectionViewDelegate, UICollectionViewDataSource
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row  == firstselectedItem && !scrolledFirstTime{
             scrolledFirstTime = true
-            (cell as? SmoothPickerCollectionViewCell)?.setSelected(selected: true)
             setSelected(selectedCell: cell,index: indexPath.row)
         }
         if !scrolledFirstTime {

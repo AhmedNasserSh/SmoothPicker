@@ -21,6 +21,7 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
             view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
             views.append(view)
         }
+        pickerView.firstselectedItem  = 4
     }
     func didSelectIndex(index: Int, view: UIView) {
         print("SelectedIndex \(index)")
