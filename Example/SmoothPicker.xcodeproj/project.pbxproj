@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		74793A03BFE7FA735495E82E /* Pods_SmoothPicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588CDB82446A0976693C3454 /* Pods_SmoothPicker_Tests.framework */; };
+		BE6801F722186D6200B1329D /* views.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6801F622186D6200B1329D /* views.swift */; };
 		E68C2AA46A140E31B7CFA805 /* Pods_SmoothPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241D5CA6768012BDDEE5115C /* Pods_SmoothPicker_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		ABB8F486A0C217E568999381 /* Pods-SmoothPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothPicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothPicker_Example/Pods-SmoothPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AD22563A84E74F40062F1F9C /* Pods-SmoothPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothPicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothPicker_Tests/Pods-SmoothPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0646A2DC9F2206EFC0515A0 /* SmoothPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SmoothPicker.podspec; path = ../SmoothPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE6801F622186D6200B1329D /* views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = views.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				BE6801F622186D6200B1329D /* views.swift */,
 			);
 			name = "Example for SmoothPicker";
 			path = SmoothPicker;
@@ -170,7 +173,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8038F53EFA65483D6D6CE6EF /* [CP] Embed Pods Frameworks */,
+				A5295971A65701DA5F0D4C12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,7 +282,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8038F53EFA65483D6D6CE6EF /* [CP] Embed Pods Frameworks */ = {
+		A5295971A65701DA5F0D4C12 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6801F722186D6200B1329D /* views.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

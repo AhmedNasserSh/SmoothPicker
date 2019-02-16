@@ -45,6 +45,6 @@ class SmoothPickerCollectionViewCell: UICollectionViewCell {
     }
 }
 extension UIView {
-    func setSmoothSelected(_ selected : Bool) {
+    @objc open func setSmoothSelected(_ selected : Bool) {
     }
 }
