@@ -1,5 +1,5 @@
 PODS:
-  - SmoothPicker (1.1.0):
+  - SmoothPicker (1.1.1):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SmoothPicker: cb180a1a89ccdee0100ac6db419dc6c5f4e8aedf
+  SmoothPicker: 8062d483e04525923cda00caf42063ce7fddcac5
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: a85a09cf1679fcf43d09713fda0c9f7f3af4076b

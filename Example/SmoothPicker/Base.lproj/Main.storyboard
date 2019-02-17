@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQI-Mp-Um7" customClass="SmoothPickerView" customModule="SmoothPicker">
-                                <rect key="frame" x="16" y="283.5" width="343" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="16" y="233.5" width="343" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="3bE-uO-gn9"/>
+                                    <constraint firstAttribute="height" constant="200" id="3bE-uO-gn9"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="Sgc-Vn-jHL"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fn-JE-Kic">
-                                <rect key="frame" x="36" y="403.5" width="303" height="40"/>
+                                <rect key="frame" x="36" y="453.5" width="303" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pVY-Hi-Xlf"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDQ-4o-qJx">
-                                <rect key="frame" x="21" y="463.5" width="333" height="40"/>
+                                <rect key="frame" x="21" y="513.5" width="333" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pfH-Ud-UMJ"/>
                                 </constraints>
@@ -73,6 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-668" y="-106"/>
         </scene>
     </scenes>
 </document>

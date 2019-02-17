@@ -69,7 +69,9 @@ public enum Direction {
         sliderCollectionView?.showsHorizontalScrollIndicator = false
         self.addSubview(sliderCollectionView!)
         sliderCollectionView?.snp.makeConstraints({ (maker) in
-            maker.left.right.top.bottom.equalToSuperview().inset(10)
+            maker.left.right.equalToSuperview().inset(10)
+            maker.centerY.equalToSuperview()
+            maker.height.equalTo((dataSource?.itemForIndex(index: 0, pickerView: self).frame.height)! + 20)
        })
         self.sliderCollectionView?.addObserver(self, forKeyPath: "contentSize", options: .old, context: nil)
         self.sliderCollectionView?.register(SmoothPickerCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)

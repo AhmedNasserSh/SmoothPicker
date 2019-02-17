@@ -19,7 +19,7 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
         super.viewDidLoad()
         for _ in 1..<11 {
             i += 5
-            let view = viewss(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+            let view = viewss(frame: CGRect(x: 0, y: 0, width: 50, height: 100))
             view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
             views.append(view)
         }
