@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		74793A03BFE7FA735495E82E /* Pods_SmoothPicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588CDB82446A0976693C3454 /* Pods_SmoothPicker_Tests.framework */; };
 		BE6801F722186D6200B1329D /* views.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6801F622186D6200B1329D /* views.swift */; };
+		BE860B0D222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE860B0B222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.swift */; };
+		BE860B0E222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE860B0C222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.xib */; };
 		E68C2AA46A140E31B7CFA805 /* Pods_SmoothPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241D5CA6768012BDDEE5115C /* Pods_SmoothPicker_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		AD22563A84E74F40062F1F9C /* Pods-SmoothPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothPicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothPicker_Tests/Pods-SmoothPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0646A2DC9F2206EFC0515A0 /* SmoothPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SmoothPicker.podspec; path = ../SmoothPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE6801F622186D6200B1329D /* views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = views.swift; sourceTree = "<group>"; };
+		BE860B0B222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeYourGiftSliderItemView.swift; sourceTree = "<group>"; };
+		BE860B0C222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizeYourGiftSliderItemView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		607FACD21AFB9204008FA782 /* Example for SmoothPicker */ = {
 			isa = PBXGroup;
 			children = (
+				BE860B0B222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.swift */,
+				BE860B0C222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.xib */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				BE860B0E222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -328,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6801F722186D6200B1329D /* views.swift in Sources */,
+				BE860B0D222FBCCF008ADC12 /* CustomizeYourGiftSliderItemView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

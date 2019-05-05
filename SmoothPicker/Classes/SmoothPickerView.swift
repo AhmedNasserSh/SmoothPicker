@@ -87,7 +87,7 @@ public enum Direction {
             itemsWidth.append(width)
         }
     }
-    private func display(){
+    public func display(){
         self.saveFrames()
         sliderHandler = SmoothPickerHandler(self)
         if SmoothPickerConfiguration.selectionStyle == nil {
@@ -128,11 +128,9 @@ extension SmoothPickerView :UICollectionViewDelegate, UICollectionViewDataSource
     }
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row  == firstselectedItem && !scrolledFirstTime{
+            scrollToItem(index: indexPath.row)
             scrolledFirstTime = true
             setSelected(selectedCell: cell,index: indexPath.row)
-        }
-        if !scrolledFirstTime {
-            scrollToItem(index: indexPath.row  + 1)
         }
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

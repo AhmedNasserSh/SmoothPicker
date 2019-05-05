@@ -17,6 +17,7 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
     var views = [UIView]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        SmoothPickerConfiguration.setSelectionStyle(selectionStyle: .scale)
         for _ in 1..<11 {
             i += 5
             let view = viewss(frame: CGRect(x: 0, y: 0, width: 50, height: 100))
@@ -24,13 +25,18 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
             views.append(view)
         }
         pickerView.firstselectedItem  = 4
+        pickerView.display()
+        
     }
     func numberOfItems(pickerView: SmoothPickerView) -> Int {
         return 10
     }
     
     func itemForIndex(index: Int, pickerView: SmoothPickerView) -> UIView {
-        return views[index]
+        let itemView = CustomizeYourGiftSliderItemView(frame: CGRect(x: 0, y: 0, width: 70, height: 40))
+        itemView.setData(value:"\(index + 1)")
+        return itemView
+        
     }
 
     func didSelectItem(index: Int, view: UIView, pickerView: SmoothPickerView) {

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmoothPicker'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'An simple component to Present A horizontal Picker with custom selections'
 
   s.description      =  'A Customized Component for creating a horizontal picker with custom styles '  
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'AVAVaas' => 'ahmed.nasser2310@gmail.com' }
   s.source           = { :git => 'https://github.com/AvaVaas/SmoothPicker.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'SmoothPicker/Classes/**/*.{swift}'
   s.frameworks = 'UIKit'
