@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SmoothPicker/Classes/**/*.{swift}'
   s.frameworks = 'UIKit'
-  s.dependency 'SnapKit'
+  s.dependency 'SnapKit',  '~> 4.2.0'
   s.swift_version = '4.2'
 
 end
