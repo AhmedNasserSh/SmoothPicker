@@ -1,6 +1,6 @@
 {
   "name": "SmoothPicker",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "summary": "An simple component to Present A horizontal Picker with custom selections",
   "description": "A Customized Component for creating a horizontal picker with custom styles",
   "homepage": "https://github.com/AvaVaas",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/AvaVaas/SmoothPicker.git",
-    "tag": "1.1.1"
+    "tag": "1.1.2"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "source_files": "SmoothPicker/Classes/**/*.{swift}",
   "frameworks": "UIKit",

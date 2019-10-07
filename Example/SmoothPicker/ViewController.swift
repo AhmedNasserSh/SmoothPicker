@@ -25,7 +25,7 @@ class ViewController: UIViewController,SmoothPickerViewDelegate,SmoothPickerView
             views.append(view)
         }
         pickerView.firstselectedItem  = 4
-        pickerView.display()
+        pickerView.reloadData()
         
     }
     func numberOfItems(pickerView: SmoothPickerView) -> Int {

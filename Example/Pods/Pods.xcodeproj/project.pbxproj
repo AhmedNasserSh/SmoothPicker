@@ -944,6 +944,39 @@
 			};
 			name = Release;
 		};
+		91A1236144F4D9D7445C30786728B1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66D626F10704353B7D48E7B51D7972D /* SmoothPicker.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SmoothPicker/SmoothPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmoothPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SmoothPicker/SmoothPicker.modulemap";
+				PRODUCT_MODULE_NAME = SmoothPicker;
+				PRODUCT_NAME = SmoothPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9CEBDEC365A8EC0CEA90EB5EC10E684A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FEC828032EA1B6D4BB2E173968415BB /* Pods-SmoothPicker_Tests.debug.xcconfig */;
@@ -978,10 +1011,11 @@
 			};
 			name = Debug;
 		};
-		BD6381D20218A882EE2EE40F428E1800 /* Debug */ = {
+		C188D9FB8D95842B83EC5517504B6F04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A66D626F10704353B7D48E7B51D7972D /* SmoothPicker.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -994,39 +1028,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SmoothPicker/SmoothPicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SmoothPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SmoothPicker/SmoothPicker.modulemap";
-				PRODUCT_MODULE_NAME = SmoothPicker;
-				PRODUCT_NAME = SmoothPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DF2EE00CA3604EEAB77D6FD93E51F01B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A66D626F10704353B7D48E7B51D7972D /* SmoothPicker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SmoothPicker/SmoothPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SmoothPicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SmoothPicker/SmoothPicker.modulemap";
 				PRODUCT_MODULE_NAME = SmoothPicker;
@@ -1076,8 +1078,8 @@
 		D2400CCC4E46286A6F35EE5E34AB7172 /* Build configuration list for PBXNativeTarget "SmoothPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD6381D20218A882EE2EE40F428E1800 /* Debug */,
-				DF2EE00CA3604EEAB77D6FD93E51F01B /* Release */,
+				91A1236144F4D9D7445C30786728B1DB /* Debug */,
+				C188D9FB8D95842B83EC5517504B6F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

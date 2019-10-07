@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmoothPicker'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'An simple component to Present A horizontal Picker with custom selections'
 
   s.description      =  'A Customized Component for creating a horizontal picker with custom styles '  

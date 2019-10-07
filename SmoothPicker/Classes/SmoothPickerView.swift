@@ -20,7 +20,7 @@ public enum Direction {
     case  pervious
 }
 @IBDesignable
- open class SmoothPickerView: UIView {
+open class SmoothPickerView: UIView {
     @IBOutlet open  var dataSource: SmoothPickerViewDataSource?
     @IBOutlet open  var delegate :SmoothPickerViewDelegate?
     @IBInspectable open var firstselectedItem = 0
@@ -34,6 +34,7 @@ public enum Direction {
     internal var itemsWidth = [CGFloat]()
     internal var didEndDragging = true
     internal var itemsCount = 10
+    open var isScrollingEnabled = true
     
     internal var scrollView: UIScrollView {
         return sliderCollectionView!
@@ -67,18 +68,20 @@ public enum Direction {
         }()
         sliderCollectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
         sliderCollectionView?.showsHorizontalScrollIndicator = false
+        sliderCollectionView?.isScrollEnabled  = isScrollingEnabled
         self.addSubview(sliderCollectionView!)
         sliderCollectionView?.snp.makeConstraints({ (maker) in
             maker.left.right.equalToSuperview().inset(10)
             maker.centerY.equalToSuperview()
             maker.height.equalTo((dataSource?.itemForIndex(index: 0, pickerView: self).frame.height)! + 20)
-       })
+        })
         self.sliderCollectionView?.addObserver(self, forKeyPath: "contentSize", options: .old, context: nil)
         self.sliderCollectionView?.register(SmoothPickerCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
         self.sliderCollectionView?.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         loadedFirstTime = true
-        self.display()
-
+        
+        self.reloadData()
+        
     }
     private func saveFrames() {
         itemsCount = (dataSource?.numberOfItems(pickerView: self))!
@@ -87,7 +90,7 @@ public enum Direction {
             itemsWidth.append(width)
         }
     }
-    public func display(){
+    public func reloadData(){
         self.saveFrames()
         sliderHandler = SmoothPickerHandler(self)
         if SmoothPickerConfiguration.selectionStyle == nil {
@@ -128,14 +131,20 @@ extension SmoothPickerView :UICollectionViewDelegate, UICollectionViewDataSource
     }
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row  == firstselectedItem && !scrolledFirstTime{
-            scrollToItem(index: indexPath.row)
             scrolledFirstTime = true
             setSelected(selectedCell: cell,index: indexPath.row)
+        }
+        if !scrolledFirstTime {
+            scrollToItem(index: indexPath.row  + 1)
         }
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = CGSize(width: itemsWidth[indexPath.row], height: (dataSource?.itemForIndex(index: indexPath.row, pickerView: self).frame.height)!)
         return size
+    }
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        sliderCollectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated:currentSelectedCell != nil)
+        handleSelection (index:  indexPath.row)
     }
 }
 // Mark : Paging
@@ -168,12 +177,12 @@ extension SmoothPickerView :SmoothPickerScrollDelegate {
         }
     }
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-       sliderHandler?.scrollViewWillBeginDragging(scrollView)
+        sliderHandler?.scrollViewWillBeginDragging(scrollView)
     }
     public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         sliderHandler?.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
     }
-   public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         sliderHandler?.scrollViewDidEndDragging(scrollView, willDecelerate: decelerate)
     }
 }
