@@ -17,9 +17,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 
 ## Installation
+### Swift Package Manager (SPM)
+SmoothPicker is available through Swift Package Manager (SPM).
+To install it this way, add this Github page as a dependancy.
 
-SmoothPicker is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
+It is also available through [CocoaPods](https://cocoapods.org).
+To install it this way, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SmoothPicker'
